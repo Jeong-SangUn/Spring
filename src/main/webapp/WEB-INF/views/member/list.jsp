@@ -8,6 +8,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-info_edit
+member_list
 </body>
 </html>

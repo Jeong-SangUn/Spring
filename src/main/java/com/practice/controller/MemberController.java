@@ -22,7 +22,7 @@ public class MemberController {
 	}
 	@RequestMapping(value = "/logout", method = RequestMethod.GET)
 	public String logout() {
-		return "http://127.0.0.1:8080";
+		return "";
 	}
 	@RequestMapping(value = "/info_edit", method = RequestMethod.GET)
 	public String info_edit() {
