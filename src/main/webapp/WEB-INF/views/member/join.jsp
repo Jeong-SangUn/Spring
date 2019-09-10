@@ -23,30 +23,42 @@
 						<form action="" method="post">
 							<div class="modal-body">
 								<div class="form-group">
-									<label for="userEmail">아이디</label>
-									<input type="text" class="form-control" name="userEmail" >
-									<button type="submit">(x)</button>
+									<label>아이디</label>
+									<input type="text" class="form-control" name="mem_id" >
+									<p align="right"><button type="submit" class="btn btn-success btn-icon">중복체크(구현x)</button></p>
 								</div>
 								<div class="row">
 									<div class="col-md-6">
 										<div class="form-group">
-											<label for="password">패스워드</label>
-											<input type="password" class="form-control" name="password" >
+											<label>패스워드</label>
+											<input type="password" class="form-control" name="mem_pw" >
 										</div>
 									</div>
 									<div class="col-md-6">
 										<div class="form-group">
-											<label for="passwordr">패스워드 확인(x)</label>
-											<input type="password" class="form-control" required="" name="passwordr" value="">
+											<label>패스워드 확인(구현x)</label>
+											<input type="password" class="form-control"  name="mem_pw1">
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>이름</label>
+											<input type="text" class="form-control" name="mem_name" >
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>생년월일</label>
+											<input type="text" class="form-control"  name="mem_birth">
 										</div>
 									</div>
 								</div>
 							</div>
 
 							<div class="modal-footer">
-								<input type="hidden" name="isEmpty" value="">
-								<button type="input" name="submit" value="newAccount" class="btn btn-success btn-icon"><i class="fa fa-check"></i> Create My Account</button>
-								<button type="button" class="btn btn-default btn-icon" data-dismiss="modal"><i class="fa fa-times-circle"></i> Cancel</button>
+								<input type="submit" name="submit" value="회원가입" class="btn btn-success btn-icon">
 							</div>
 						</form>
 

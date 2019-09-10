@@ -3,8 +3,19 @@ package com.practice.dao;
 import java.util.List;
 import java.util.Map;
 
-public class BoardDAO implements BoardService{
+import javax.annotation.Resource;
 
+import org.apache.ibatis.session.SqlSession;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class BoardDAO implements BoardService{
+	
+	@Autowired
+	@Resource(name="sqlSession")
+	private SqlSession sqlSession;
+	
 	@Override
 	public int insertBoard(Map<String, Object> map) {
 		// TODO Auto-generated method stub

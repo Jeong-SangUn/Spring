@@ -22,7 +22,7 @@ public class MemberController {
 	}
 	@RequestMapping(value = "/logout", method = RequestMethod.GET)
 	public String logout() {
-		return "";
+		return "/member/logout";
 	}
 	@RequestMapping(value = "/info_edit", method = RequestMethod.GET)
 	public String info_edit() {
